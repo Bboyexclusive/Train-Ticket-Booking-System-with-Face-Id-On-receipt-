@@ -1,0 +1,46 @@
+/* (A) ENTIRE PAGE */
+* { font-family: arial,sans-serif; }
+body, html {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  background: #101010;
+}
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#kam-live, #kam-snaps, #kam-controls {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* (B) LIVE FEED VIDEO */
+#kam-live {
+  height: 600px;
+  object-fit: cover;
+}
+
+/* (C) SNAPSHOTS */
+#kam-snaps {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  min-height: 150px;
+  background: #000;
+}
+#kam-snaps canvas {
+  max-height: 150px;
+  width: auto;
+}
+
+/* (D) CONTROL BUTTONS */
+#kam-controls { display: flex; }
+#kam-controls button {
+  width: 50%;
+  border: 0;
+  background: #333;
+  color: #fff;
+  padding: 30px 0;
+  cursor: pointer;
+}
+#kam-controls .material-icons { font-size: 40px; }
